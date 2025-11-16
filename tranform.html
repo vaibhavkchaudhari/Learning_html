@@ -6,19 +6,20 @@
     <title>Document</title>
     <style>
         .container{
-            display:flex;
+            display: flex;
+            flex-wrap: wrap;
             margin-left: 40;
             padding-top: 50;
         }
         .box{
             background-color: green;
-            border-radius: 10;
+            border-radius: 10px;
             height: 150px;
             width: 150px;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 40;
+            font-size: 30px;
             margin-left: 40px;
             color: white;
             transition: tranform 3s ease-in-out 500ms;
@@ -27,23 +28,23 @@
          .box1:hover{
             transform: translate(125px,125px);
          }
-         .box2 :hover{
+         .box2:hover{
             transform: translate(125px);
          }
-         .box3 :hover{
+         .box3:hover{
             transform: translate(125px);
          }
-         .box4 :hover{
-            transform: rotate(-360);
+         .box4:hover{
+            transform: rotate(90deg);
          }
-         .box5 :hover{
+         .box5:hover{
             transform: skewx(30deg);
          }
-         .box6 :hover{
+         .box6:hover{
             transform: scale(10);
          }
-         .box7 :hover{
-            transform:
+         .box7:hover{
+            transform: scale(1.5) translateX(100px) rotate(80deg);
          }
 
     </style>
@@ -53,9 +54,10 @@
         <div class="box box1">Transalet</div>
         <div class="box box2">TransaletX</div>
         <div class="box box3">TransaletY</div>
-        <div class="box box4">Roatate</div>
+        <div class="box box4">Rotate</div>
         <div class="box box5">skew</div>
         <div class="box box6">Scale</div>
+         <div class="box box7">Multiple</div>
      </div>
 </body>
 </html>
